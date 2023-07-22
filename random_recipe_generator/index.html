@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Recipe Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Recipe Generator</h1>
+        <form action="random_recipe.php" method="post">
+            <label for="cuisine">Select Cuisine:</label>
+            <select name="cuisine" id="cuisine">
+                <option value="Italian">Italian</option>
+                <option value="Indian">Indian</option>
+                <option value="Mexican">Mexican</option>
+                <!-- Add more cuisine options as desired -->
+            </select>
+            <br>
+            <label for="course">Select Course:</label>
+            <select name="course" id="course">
+                <option value="Appetizer">Appetizer</option>
+                <option value="Main Course">Main Course</option>
+                <option value="Dessert">Dessert</option>
+                <!-- Add more course options as desired -->
+            </select>
+            <br>
+            <label for="dietary_preference">Select Dietary Preference:</label>
+            <select name="dietary_preference" id="dietary_preference">
+                <option value="Any">Any</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Gluten-Free">Gluten-Free</option>
+                <!-- Add more dietary preferences as desired -->
+            </select>
+            <br>
+            <input type="submit" value="Get Random Recipe">
+        </form>
+    </div>
+</body>
+</html>
